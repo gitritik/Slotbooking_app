@@ -1,5 +1,3 @@
-<<<<<<< HEAD
+
 web: gunicorn CCMS.wsgi --log-file -
-=======
-web: gunicorn CCMS.wsgi --log-file -
->>>>>>> b4552006f61fa1d3c5a07c51d27bab27691e49ee
+
