@@ -27,7 +27,7 @@
         left: 0;
         bottom: 0;
         width: 100%;
-        color: white;
+        color: rgb(7, 0, 0);
         text-align: center;
       }
       </style>
@@ -55,9 +55,9 @@
               Sports
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Badminton</a>
-              <a class="dropdown-item" href="#">Table Tennis</a>
-              <a class="dropdown-item" href="#">Cricket</a>
+              <a class="dropdown-item" href="./baddy">Badminton</a>
+              <a class="dropdown-item" href="./tt">Table Tennis</a>
+              <a class="dropdown-item" href="./cricket">Cricket</a>
             </div>
           </li>
         </ul>
@@ -71,14 +71,25 @@
     {% endblock %}
     
   </div>
+  <br>
+  <br>
+  <br>
     
   <div class="footer bg-danger bg-gradient mt-2">
     <div class="d-flex justify-content-around">
       <div class="p-2"></div>
-      <div class="p-2">Flex item 2</div>
+      <div class="p-2">
+        <div class="d-flex flex-column">
+        <div class="p-2">BEST SPORTS COMPLEX</div>
+        <div class="p-0"><small class="lead">
+          Indraprastha Estate, Grand Trunk Rd, near Raj Ghat, IG Indoor Stadium, ITO, IP Estate, New Delhi, Delhi 110002
+        </small>
+        </div>
+      </div>
+    </div>
       <div class="p-2"><div class="d-flex flex-column">
       <div class="p-2">RITIK SRIVASTAVA</div>
-      <div class="p-2"><a href = "mailto: abc@example.com"><i class="fa fa-envelope"></i></a></div>
+      <div class="p-0"><a href = "mailto: abc@example.com"><i class="fa fa-envelope"></i></a></div>
     </div>
   </div>
     </div>

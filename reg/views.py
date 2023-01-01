@@ -11,7 +11,7 @@ def index(request):
     days=Day.objects.all()
     sports=Sport.objects.all()
     sllist=list(slots)
-    
+
         
 
     return render(request,"home.html",{'sports':sports, 'days':days,'slots':slots})
@@ -41,3 +41,12 @@ def forming(request):
 
 def posted(request):
     return render(request,'posted.html')
+
+def tt(request):
+    return render(request,'tt.html')
+
+def baddy(request):
+    return render(request,'baddy.html')
+
+def cricket(request):
+    return render(request,'cricket.html')
