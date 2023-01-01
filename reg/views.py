@@ -6,24 +6,15 @@ from reg.models import slTime
 from reg.models import Sport
 from .forms import BookKaro
 def index(request):
-    if request.method=="POST":
-        user=request.POST.get('user')
-        sport=request.POST.get('sport')
-        day=request.POST.get('day')
-        slot=request.POST.get('slot')
-        # booking=Booking(bookuser=user,booksport=sport,bookday=day,bookslot=slot)
-        # booking.save()
     booking=Booking.objects.all()
     slots=slTime.objects.all()
     days=Day.objects.all()
     sports=Sport.objects.all()
     sllist=list(slots)
-    # booker={}
-    # for i in sllist:
-    #     booker[i]=Booking.isBooked('Table Tennis','Monday',str(i))
+    
         
 
-    return render(request,"index.html",{'sports':sports, 'days':days,'slots':slots})
+    return render(request,"home.html",{'sports':sports, 'days':days,'slots':slots})
 
 # Create your views here.
 def forming(request):

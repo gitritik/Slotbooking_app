@@ -15,19 +15,34 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Sports Complex</title>
   </head>
-  <body style="background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20220217/pngtree-colorful-sports-theme-background-material-image_944423.jpg')">
+  <body class='bg-light bg-gradients' >
+
+    <style>
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+      }
+      </style>
+      
+      
     <div >
       <div class="">
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-      <a class="navbar-brand" href="./"><img src="https://www.pngfind.com/pngs/m/427-4270767_sports-complex-graphic-design-hd-png-download.png" style="width:10%;height:10%;"></a>
+      <a class="navbar-brand" href="./"><img src="https://www.pngfind.com/pngs/m/427-4270767_sports-complex-graphic-design-hd-png-download.png" width="50" height="50"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
-      <div class="collapse navbar-collapse " id="navbarSupportedContent" >
+      <h1>Welcome To My Sports Center</h1>
+      <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarSupportedContent" >
+        <div class="px-5">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
@@ -46,58 +61,30 @@
             </div>
           </li>
         </ul>
-        
+      </div>
       </div>
     </nav>
-  </div>
-    <div class="bg-light bg-gradient px-4 rounded-pill border border-danger shadow-lg ">
+  </div class='pb-0'>
+  
+    
     {% block content %}
     {% endblock %}
+    
+  </div>
+    
+  <div class="footer bg-danger bg-gradient mt-2">
+    <div class="d-flex justify-content-around">
+      <div class="p-2"></div>
+      <div class="p-2">Flex item 2</div>
+      <div class="p-2"><div class="d-flex flex-column">
+      <div class="p-2">RITIK SRIVASTAVA</div>
+      <div class="p-2"><a href = "mailto: abc@example.com"><i class="fa fa-envelope"></i></a></div>
     </div>
   </div>
-    <!-- <form>
-      <div class="form-group">
-        <label for="exampleFormControlSelect1">Day</label>
-        <select class="form-control" id="exampleFormControlSelect1" name="day">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">
-          Default checkbox
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
-        <label class="form-check-label" for="defaultCheck2">
-          Disabled checkbox
-        </label>
-      </div>
-    </form>
-    {% for sport in sports %}
-        {{sport}}
-        {% endfor %}
-    {% for day in days %}
-        {{day}}
-        {% endfor %}
-    {% for slot in slots %}
-        {{slot}}
-        {% endfor %}
-         -->
-          
-        <!-- {% for books in booker %}
-        {{books}}
-        {% endfor %} -->
-        
-        
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    </div>
+  </div>
+
+  
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
